@@ -13,6 +13,10 @@
       <url>https://en.wikipedia.org/wiki/Public_domain</url>
     </license>
   </licenses>
+  <properties>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
+  </properties>
   <developers>
     <developer>
       <id>in-somnia</id>
