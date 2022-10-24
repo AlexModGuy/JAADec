@@ -299,8 +299,10 @@ public class MetaData {
 			else if(l==BoxTypes.ALBUM_NAME_BOX) put(Field.ALBUM, data.getText());
 			else if(l==BoxTypes.TRACK_NUMBER_BOX) {
 				byte[] b = data.getData();
-				put(Field.TRACK_NUMBER, new Integer(b[3]));
-				put(Field.TOTAL_TRACKS, new Integer(b[5]));
+				int b3 = b[3];
+				int b5 = b[5];
+				put(Field.TRACK_NUMBER, b3);
+				put(Field.TOTAL_TRACKS, b5);
 			}
 			else if(l==BoxTypes.DISK_NUMBER_BOX) put(Field.DISK_NUMBER, data.getInteger());
 			else if(l==BoxTypes.COMPOSER_NAME_BOX) put(Field.COMPOSER, data.getText());
